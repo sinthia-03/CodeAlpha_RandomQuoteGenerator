@@ -33,11 +33,10 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Random Quote Generator'),
-        centerTitle: true,
+        title:Text('Random Quote Generator'),
       ),
       body: Padding(
-        padding: const EdgeInsets.all(20),
+        padding:EdgeInsets.all(20),
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -45,12 +44,12 @@ class _HomeScreenState extends State<HomeScreen> {
               Text(
                 currentQuote.text,
                 textAlign: TextAlign.center,
-                style: const TextStyle(
+                style:TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.w500,
                 ),
               ),
-              const SizedBox(height: 20),
+              SizedBox(height: 20),
               Text(
                 "- ${currentQuote.author}",
                 style: const TextStyle(
@@ -58,10 +57,10 @@ class _HomeScreenState extends State<HomeScreen> {
                   fontStyle: FontStyle.italic,
                 ),
               ),
-              const SizedBox(height: 40),
+              SizedBox(height: 40),
               ElevatedButton(
                 onPressed: showRandomQuote,
-                child: const Text('New Quote'),
+                child:Text('New Quote'),
               ),
             ],
           ),

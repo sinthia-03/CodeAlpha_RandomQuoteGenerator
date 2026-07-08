@@ -15,6 +15,16 @@ void main() {
    @override
    Widget build(BuildContext context) {
      return MaterialApp(
+       debugShowCheckedModeBanner: false,
+       theme: ThemeData(
+         colorScheme:
+           ColorScheme.fromSeed(seedColor: Colors.indigo),
+         useMaterial3: true,
+         appBarTheme: AppBarTheme(
+           centerTitle: true,
+           backgroundColor: Colors.blueAccent.shade100,
+         )
+       ),
        home: HomeScreen(),
      );
    }
